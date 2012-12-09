@@ -1,7 +1,6 @@
 #include "basic.h"
 #include "bp_socket.h"
 
-
 /*
    setup tcp socket.
    if success, return socket, or return a value < 0 and set errno
@@ -53,11 +52,3 @@ int setup_tcp(char *port)
 
     return sock;
 }
-
-/*
-int main()
-{
-    printf("%d\n", setup_tcp("4558"));
-    perror("");
-    return 0;
-}*/

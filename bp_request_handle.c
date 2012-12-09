@@ -3,10 +3,6 @@
 #include "bp_request_handle.h"
 #include <string.h>
 #include "bp_load_file.h"
-/*
-#define OK_HEADER "HTTP/1.0 200 OK\r\n\r\n"
-#define NOT_FOUND "HTTP/1.0 404 Not Found\r\n"
-*/
 
 int request_handle(int client_sock, struct sockaddr_in *addr, socklen_t *addrlen)
 {

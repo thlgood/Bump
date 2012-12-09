@@ -26,18 +26,8 @@ int main(int argc, char *argv[])
     
     int client_sock;
     struct sockaddr_in addr;
-    socklen_t addrlen = sizeof(addr);/*
-    client_sock = accept(sock, (struct sockaddr*)&addr, &addrlen);
-    if (client_sock < 0)
-    {
-        perror("accept");
-    }
-    if ((retval = request_handle(client_sock, &addr, addrlen)) < 0)
-    {
-        perror("request_headle");
-        printf("%d\n", retval);
-        exit(1);
-    }*/
+    socklen_t addrlen = sizeof(addr);
+
     while (1)
     {
         client_sock = accept(sock, (struct sockaddr*)&addr, &addrlen);
